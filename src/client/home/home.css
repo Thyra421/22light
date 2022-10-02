@@ -1,0 +1,19 @@
+.home {
+    background-color: var(--third-color);
+    height: calc(100vh - var(--topbar-height));
+    width: 100%;
+    color: black;
+    font-weight: bold;
+}
+
+.home-content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-title {
+    font-size: 20px;
+}
