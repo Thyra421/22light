@@ -6,15 +6,13 @@ import Register from "./auth/register/Register";
 import Login from "./auth/login/Login";
 
 // Client part
-import Topbar from "./components/Topbar";
+// import Topbar from "./components/Topbar";
 import Home from "./client/home/Home";
 
 // Components part
 import Error from "./components/Error";
 
 function App() {
-  var logged = window.localStorage.getItem("logged");
-
   return (
     <BrowserRouter>
       <Routes>

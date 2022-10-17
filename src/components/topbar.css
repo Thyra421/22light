@@ -99,7 +99,7 @@
 }
 
 .notification-item:hover {
-  background-color: var(--primary);
+  background-color: #83c9f4;
 }
 
 .notification-item > i {

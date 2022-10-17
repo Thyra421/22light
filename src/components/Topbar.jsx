@@ -7,7 +7,7 @@ import user_menu from "../assets/Json/user_menus.json";
 import { auth } from "../firebase/firebase";
 import { signOut } from "@firebase/auth";
 import Alert from "@material-ui/lab/Alert";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import logo from '../assets/pictures/logo.jpg';
 
 const Topbar = () => {
@@ -59,7 +59,6 @@ const Topbar = () => {
   };
 
   const renderUserMenu = (item, index) => {
-    console.log(item.content);
     return (
       <div key={index}>
         <div className="notification-item" onClick={handleClick}>
@@ -83,7 +82,7 @@ const Topbar = () => {
   return (
     <div className="topbar">
         <div className="topbar-logo">
-            <span className="topbar-Logo"> <img src={logo} alt="topbar-Logo" className="topbar-Avatar" /> <span className="topbar-Title"> 22 Light</span></span>
+            <span className="topbar-Logo"> <img src={logo} alt="topbar-Logo" className="topbar-Avatar" /></span>
         </div>
       <div className="topbar_search"></div>
       {renderDeconnexion()}

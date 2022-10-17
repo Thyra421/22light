@@ -122,24 +122,24 @@ export default function Login() {
             {renderError()}
             {renderSuccess()}
             <div className="login-Contain">
-            <span className="login-Title"> <img src={Logo} alt="logo" className="login-logo" />Connexion</span>
+            <span className="login-Title"> <img src={Logo} alt="logo" className="login-logo" />Login</span>
                 <form onSubmit={handleSubmit}>
                     <center>
                         <div className="login-login">
                             <input type="text" className="login-search" placeholder="Email..." value={login} onChange={(e) => setLogin(e.target.value)}/>
                         </div>
                         <div className="login-password">
-                            <input type="password" id="pass" className="password-search" placeholder="Mot de passe..." value={password} onChange={(e) => setPassword(e.target.value)}/>
+                            <input type="password" id="pass" className="password-search" placeholder="Password..." value={password} onChange={(e) => setPassword(e.target.value)}/>
                         </div>
-                        <input type="submit" className="login-button" value="Connexion" ></input>
+                        <input type="submit" className="login-button" value="Login" ></input>
                     </center>
                 </form>
                 <div className="login-google" onClick={signInWithGoogle}>
-                    <LockOpen/> Connexion avec Google
+                    <LockOpen/> Login with Google
                 </div>
-                <Link to="/register" className="link">
+                <Link to="/register" className="link" >
                     <li className="login-registerLink">
-                        Enregistrer son compte
+                        Register your account
                     </li>
                 </Link>
             </div>

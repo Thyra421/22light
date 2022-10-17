@@ -72,7 +72,7 @@
 }
 
 .register-button:hover {
-  /* background: #fbbc05; */
+  background: #83c9f4;
 }
 
 .register-backButton {
@@ -112,9 +112,8 @@
   border-radius: 10px;
   color: white;
   letter-spacing: 2px;
-  text-decoration: none;
 }
 
 .register-loginLink:hover {
-  color: #fbbc05;
+  color: #83c9f4;
 }
