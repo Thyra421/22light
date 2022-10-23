@@ -44,6 +44,7 @@ export default function Register() {
       await setDoc(newUserRef, {
         name: username,
         mail: mail,
+        role: "1",
       });
       logginPage();
     } catch (err) {
@@ -65,7 +66,7 @@ export default function Register() {
     if (error !== "") {
       return (
         <div className="register-alert">
-          <Alert severity="error">Enregistrement échouée — {error}</Alert>
+          <Alert severity="error">Failed register — {error}</Alert>
         </div>
       );
     }
@@ -75,7 +76,7 @@ export default function Register() {
     if (success !== "") {
       return (
         <div className="register-alert">
-          <Alert severity="success">Enregistrement réussie</Alert>
+          <Alert severity="success">Success register</Alert>
         </div>
       );
     }
