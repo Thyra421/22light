@@ -1,34 +1,28 @@
-import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./User/Pages/Home/Home";
+import Shop from "./User/Pages/Shop/Shop";
+import Cart from "./User/Pages/Cart/Cart";
+import Topbar from "./Components/topBar/Topbar";
+import Error from "./Components/Error/Error";
+import ProductListing from "./Admin/shop/Product_Listing";
+import ProductPage from "./Components/productPage/ProductPage";
 
-// Auth part
-import Register from "./auth/register/Register";
-import Login from "./auth/login/Login";
-
-// Client part
-// import Topbar from "./components/Topbar";
-import Home from "./client/home/Home";
-import ProductListing from "./client/Admin/shop/Product_Listing";
-
-// Components part
-import Error from "./components/Error";
-
-function App() {
-  var role = window.localStorage.getItem("role");
-
+const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />{" "}
-        <Route path="" element={<Home />} />
-        <Route path="*" element={<Error />} />
-        {role === "1" && (
+    <div>
+      <BrowserRouter>
+        <Topbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="*" element={<Error />} />
           <Route path="/product-listing" element={<ProductListing />} />
-        )}
-      </Routes>
-    </BrowserRouter>
+          <Route path="/shop/:productId" element={<ProductPage />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
-}
+};
 
 export default App;

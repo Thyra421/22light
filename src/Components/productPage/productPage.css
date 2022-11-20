@@ -1,0 +1,11 @@
+.productPage {
+  background-color: #ffffff;
+  width: 100%;
+  color: black;
+  font-weight: bold;
+} /* .product */
+
+.productPage-container {
+  height: 100%;
+  display: flex;
+} /* .product-container */
