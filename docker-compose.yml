@@ -6,8 +6,8 @@ services:
     image: 22light_server:latest
     container_name: 22light_server
     restart: always
-    ports:
-      - "8080:8080"
+    # ports:
+    #   - "8080:8080"
     network_mode: host
 
   client:
@@ -15,6 +15,6 @@ services:
     image: 22light_client:latest
     container_name: 22light_client
     restart: always
-    ports:
-      - "3000:3000"
+    # ports:
+    #   - "3000:3000"
     network_mode: host
