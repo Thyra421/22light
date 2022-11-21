@@ -1,13 +1,15 @@
 import axios from 'axios';
+import { SERVER_URL } from '../server_url.js'
 
 let request = [
-    "http://localhost:8000/products",
+    `http://${SERVER_URL}:8000/products`,
 ]
 
 
 const fetchAllProducts = async (filter, category, brand) => {
     var finalProducts = [];
 
+    console.log(request)
     const res = await axios.get(request + (isNoParam(filter, category, brand) ? "" : "?") +
         checkParam(filter, "filter") +
         checkParam(category, "category") +
@@ -42,7 +44,7 @@ const createProducts = async (description, picture, name, brand, type, price, co
         category: type,
         date: Date.now()
     };
-    axios.post(`http://localhost:8000/products`, product)
+    axios.post(`http://${SERVER_URL}:8000/products`, product)
         .then(res => {
             console.log(res.data);
         })
