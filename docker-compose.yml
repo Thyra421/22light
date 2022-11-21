@@ -8,6 +8,8 @@ services:
     restart: always
     ports:
       - "8080:8080"
+    network_mode: host
+
   client:
     build: ./client
     image: 22light_client:latest
@@ -15,5 +17,4 @@ services:
     restart: always
     ports:
       - "3000:3000"
-    links:
-      - server
+    network_mode: host
