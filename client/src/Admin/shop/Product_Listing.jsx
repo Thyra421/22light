@@ -5,7 +5,7 @@ import { renderErrorAlert, renderSuccessAlert } from "../../Helper/Alert";
 import sleep from "../../Helper/Wait";
 
 export default function Product_Listing() {
-    document.title = "Sneakers - Product Creating Page";
+    document.title = "22 Light - Product Creating Page";
     const [brand, setBrand] = useState("");
     const [name, setName] = useState("");
     const [picture, setPicture] = useState("");

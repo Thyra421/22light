@@ -6,7 +6,7 @@ import HashLoader from "react-spinners/HashLoader";
 import { UilSearch } from '@iconscout/react-unicons'
 
 export default function ShopUser() {
-    document.title = "Sneakers - Shop";
+    document.title = "22 Light - Shop";
     const [product, setProduct] = useState();
     const [category, setCategory] = useState();
     const [brand, setBrand] = useState();

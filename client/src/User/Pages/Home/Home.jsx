@@ -8,7 +8,7 @@ import HashLoader from "react-spinners/HashLoader";
 import { fetchNewProduct } from "../../../Helper/Home";
 
 export default function Home() {
-    document.title = "Sneakers - Accueil";
+    document.title = "22 Light - Home";
     const [loading, setLoading] = useState(true);
     const [product, setProduct] = useState()
 
