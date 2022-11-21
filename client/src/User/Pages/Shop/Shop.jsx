@@ -20,7 +20,6 @@ export default function ShopUser() {
     // Use effect => attend que la variable change et rebuild a ce moment
     useEffect(() => {
         callback();
-        checkLoader(product);
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [filter, brand, category]);
 
@@ -36,6 +35,7 @@ export default function ShopUser() {
         try {
             const data = await fetchAllProducts(search, category, brand)
             setProduct(data)
+            checkLoader(product);
         } catch (err) {
             console.error(err);
         }

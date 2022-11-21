@@ -1,10 +1,10 @@
 import "./error.css";
 import React from "react";
-import Picture from "../../Assets/image/Error404.jpeg";
 import { Link } from "react-router-dom";
 
 export default function Error() {
     document.title = "22 Light - Error";
+    const Picture = "https://img.freepik.com/vecteurs-libre/oops-erreur-404-illustration-concept-robot-casse_114360-5529.jpg?w=2000"
 
     return (
         <div className="error">
