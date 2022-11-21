@@ -16,4 +16,4 @@ services:
     ports:
       - "3000:3000"
     links:
-      - 22light_server
+      - server
