@@ -1,0 +1,30 @@
+.displaycart-container {
+}
+
+.dispaycart-global {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.displaycart-picture {
+    width: 100px;
+    height: 100px;
+}
+
+.displaycart-text {
+    font-size: 12px;
+}
+
+.displaycart-article {
+    width: 200px;
+}
+
+.displaycart-quantity {
+    width: 200px;
+}
+
+.displaycart-price {
+    width: 20px;
+    text-align: right;
+}

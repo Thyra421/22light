@@ -43,7 +43,7 @@ function ProductPage() {
                         picture={item.picture}
                         name={item.name}
                         brand={item.brand}
-                        link={item.link}
+                        quantity={item.quantity}
                         description={item.description}
                         colours={item.colours}
                         price={item.price}

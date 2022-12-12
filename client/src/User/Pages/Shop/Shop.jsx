@@ -125,7 +125,7 @@ export default function ShopUser() {
                                 picture={item.picture}
                                 content={item.name}
                                 brand={item.brand}
-                                link={item.link}
+                                quantity={item.quantity}
                             />
                         ))}
                     </div>

@@ -13,6 +13,7 @@ export default function ProductSlider(props) {
             title={item.name}
             picture={item.picture}
             description={item.brand}
+            id={item._id}
         />
     ));
 

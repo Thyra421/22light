@@ -1,4 +1,5 @@
 import "./productslider.css";
+import { Link } from 'react-router-dom'
 
 export const responsive = {
   superLargeDesktop: {
@@ -22,11 +23,13 @@ export const responsive = {
 
 function Product(props) {
   return (
-    <div className="productSlider-container">
-      <img className="productSlider-grid-picture" src={props.picture} alt="product pics" />
-      <div className="productSlider-brand">{props.title}</div>
-      <div className="productSlider-name">{props.description}</div>
-    </div>
+    <Link to={"/shop/"+props.id}>
+        <div className="productSlider-container">
+            <img className="productSlider-grid-picture" src={props.picture} alt="product pics" />
+            <div className="productSlider-brand">{props.title}</div>
+            <div className="productSlider-name">{props.description}</div>
+        </div>
+    </Link>
     );
 }
 

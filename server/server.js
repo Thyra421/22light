@@ -12,6 +12,7 @@ const DB_URL = (process.env.DATABASE_URL)
 const products = require('./routes/products');
 const page_product = require('./routes/product_page');
 const new_product = require('./routes/product_new');
+const auth = require('./routes/auth');
 
 // CONNECTION
 async function connect() {
@@ -40,6 +41,8 @@ app.use("/products", products)
 app.use("/product_by_id", page_product)
 // new_product routes
 app.use("/new_product", new_product)
+// auth Routes
+app.use("/user", auth)
 
 app.listen(SERVER_URL, () => {
     console.log(`Server listening at http://localhost:${SERVER_URL}`)

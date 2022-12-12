@@ -1,0 +1,82 @@
+.shipping-form {
+    display: inline-block;
+    justify-content: center;
+    item-align: center;
+  }
+  
+  .shipping-contact {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Roboto, Helvetica, sans-serif;
+  }
+  
+  .shipping-adress {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    space-between: 0px;
+    grid-auto-flow: row;
+    align-items: center;
+    text-align: center;
+    font-family: Roboto, Helvetica, sans-serif;
+  }
+  
+  /* Login search panel */
+  .shipping-field {
+    outline: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(101, 101, 101, 0.85);
+    background: rgba(101, 101, 101, 0.85);
+    color: white;
+  }
+  
+  .shipping-product {
+    cursor: pointer;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px;
+    text-decoration: none;
+    margin-top: 20px;
+    color: white;
+    transition: 600ms;
+    margin-bottom: 60px;
+  } /* .product-button */
+  
+  .shipping-product:hover {
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    transition: 600ms;
+    background: white;
+  } /* .product-button:hover */
+  
+  .shipping-form {
+      width: 80%;
+      padding: 16px 16px;
+      border-radius: 20px;
+      border: 1px solid rgba(101, 101, 101, 0.85);
+      margin-bottom: 20px;
+      background: rgba(101, 101, 101, 0.85);
+  }
+  
+  .shipping-field-box {
+      color: white;
+      padding: 4px 4px;
+  }
+  
+  .shipping-title {
+      font-size: 28px;
+      color: white;
+      font-weight: bold;
+      font-family: Roboto, Helvetica, sans-serif;
+      margin-bottom: 20px;
+  }
