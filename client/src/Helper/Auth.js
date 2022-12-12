@@ -3,6 +3,8 @@ import "../auth/auth.css"
 import Alert from '@mui/material/Alert';
 import axios from "axios";
 import sleep from './Wait';
+import { SERVER_URL } from '../server_url.js'
+
 
 // Alert Error Registration Message
 export const renderErrorRegistrationAlert = (error) => {
@@ -63,7 +65,7 @@ const errorLogin = async (setError) => {
 }
 
 export const myLogin = async (setSuccess, setError, email, password, navigate) => {
-  const result = await axios.post("http://localhost:8000/user/login", {email: email, password: password})
+  const result = await axios.post(`http://${SERVER_URL}:8000/user/login`, {email: email, password: password})
   if (result.status === 200) {
     console.log(result)
     window.localStorage.setItem("uid", result.data.data.uid);
@@ -91,7 +93,7 @@ const errorRegisterEmail = async (setError) => {
 
 export const myRegister = async (setSuccess, setError, email, password, navigate) => {
     var user = email.substr(0, email.indexOf('@'));
-    const result = await axios.post("http://localhost:8000/user/register", {email: email, password: password, name: user})
+    const result = await axios.post(`http://${SERVER_URL}:8000/user/register`, {email: email, password: password, name: user})
     if (result.status === 200) {
                 window.localStorage.setItem("uid", result.data.uid);
                 window.localStorage.setItem("email", email);
